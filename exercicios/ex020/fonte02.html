@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Be my';
+            src: url(fontes/Be\ My\ Valentine.otf) format(opentype)
+            url(fontes/Be\ My\ Valentine.ttf) format(-truetype);
+        }
+        @font-face {
+            font-family: 'Valentine';
+            src: url(fontes/Valentine.otf) format(opentype), url(fontes/Valentine.ttf) format(-truetype);
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                -truetype (ttf)
+                -embedded-opentype
+                -trutupe-aat(apple advanced)
+                -svg
+            */
+        }
+        body{
+            font-family: 'Be my', Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font: 'Be My';
+            font-size: 3em;
+            font-weight: normal;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto accusantium debitis natus, eveniet eum quibusdam, fuga officiis tempora cupiditate minima temporibus architecto autem blanditiis consequatur assumenda pariatur qui totam.</p>
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita omnis harum illum totam tenetur enim dolorum voluptatibus ratione optio autem, non dolore illo recusandae eaque dolor velit. Eius, pariatur id.</p>
+</body>
+</html>
